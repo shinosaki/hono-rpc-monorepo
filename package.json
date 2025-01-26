@@ -1,0 +1,24 @@
+{
+  "name": "hono-rpc-monorepo",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "apps": "pnpm -F \"@apps/*\"",
+    "server": "pnpm -F \"@apps/server\"",
+    "client": "pnpm -F \"@apps/client\""
+  },
+  "dependencies": {
+    "hono": "4.x.x",
+    "react": "18.x.x",
+    "react-dom": "18.x.x"
+  },
+  "devDependencies": {
+    "typescript": "5.x.x",
+    "@types/react": "18.x.x",
+    "@types/react-dom": "18.x.x",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "6.x.x",
+    "@cloudflare/workers-types": "4.x.x",
+    "wrangler": "3.x.x"
+  }
+}

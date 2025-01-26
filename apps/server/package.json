@@ -1,0 +1,16 @@
+{
+  "name": "@apps/server",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "pnpm run /^dev:.*/",
+    "dev:server": "wrangler dev",
+    "dev:types": "tsc --watch",
+    "build:types": "tsc"
+  }
+}
