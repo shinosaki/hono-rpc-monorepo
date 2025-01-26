@@ -13,7 +13,7 @@ const CurrentDate = () => {
 
       try {
         const res = await api.date.$get()
-        if (res.ok) {
+        if (!res.ok) {
           throw Error('Failed to fetch timestamp')
         }
 
