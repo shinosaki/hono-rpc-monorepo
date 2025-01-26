@@ -11,6 +11,6 @@
     "dev": "pnpm run /^dev:.*/",
     "dev:server": "wrangler dev",
     "dev:types": "tsc --watch",
-    "build:types": "tsc"
+    "build": "tsc"
   }
 }
